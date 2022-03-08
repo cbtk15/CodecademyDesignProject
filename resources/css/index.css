@@ -15,21 +15,39 @@
   }
   
   .hder-1 {
-    max-width: 70%;
+    width: 100%;
     position: relative;
   }
 
-  .flx-row-cntr{
+  .flx-row-ctnr{
       display: flex;
-      flex-flow:row wrap;
+      flex-flow:row nowrap;
+      width: 100%;
+      justify-content: center;
   }
   
   .hd-1 {
+    flex: 2;
     font-size: var(--hd-1-mj-thrd);
     margin: 3.052rem 0 3.815rem 3.815rem;
     font-weight:normal;
     line-height:1.2;
     width: 70%;
+  }
+
+  .circle-nav{
+      flex: 1;
+  }
+
+  .circle-svg{
+      margin: 4.768rem 0 0 -200px;
+      transform: rotateZ(15deg);
+  }
+
+  .text a{ 
+      display: inline-block;
+      padding: 5px;
+      background-color: aqua;
   }
   
   
@@ -46,4 +64,3 @@
     list-style-type: none;
 
 }
-
