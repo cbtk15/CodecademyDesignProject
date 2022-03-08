@@ -1,0 +1,49 @@
+:root{
+    --hd-1-gld: ;
+    --hd-1-mj-thrd:11.642rem;
+
+    --hd-2-mj-thrd: 4.768rem;
+    --hd-3-mj-thrd:3.815rem;
+    --hd-4-mj-thrd:3.052rem;
+    --hd-5-mj-thrd:2.441rem;
+
+    --tl-1:1.563rem;
+  }
+  
+  body{
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .hder-1 {
+    max-width: 70%;
+    position: relative;
+  }
+
+  .flx-row-cntr{
+      display: flex;
+      flex-flow:row wrap;
+  }
+  
+  .hd-1 {
+    font-size: var(--hd-1-mj-thrd);
+    margin: 3.052rem 0 3.815rem 3.815rem;
+    font-weight:normal;
+    line-height:1.2;
+    width: 70%;
+  }
+  
+  
+  .tagline-container {
+    font-size: clamp(var(--tl-1), 1.2rem, 1rem);
+    width: 44.409rem;
+  }
+
+.internal-nav{
+    font-size: var(--tl-1);
+}
+
+.internal-ul {
+    list-style-type: none;
+
+}
+
