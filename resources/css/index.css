@@ -2,39 +2,203 @@
     --hd-1-gld: ;
     --hd-1-mj-thrd:11.642rem;
 
-    --hd-2-mj-thrd: 4.768rem;
+    --hd-2-mj-thrd:4.768rem;
     --hd-3-mj-thrd:3.815rem;
     --hd-4-mj-thrd:3.052rem;
     --hd-5-mj-thrd:2.441rem;
 
     --tl-1:1.563rem;
+
+    --nav-1: 1.563rem;
+    
+    --aside-hd:1.563rem;
+    --aside-p:1.25rem;
   }
-  
+ 
+
   body{
     font-family: 'Poppins', sans-serif;
+    background: linear-gradient(90deg, hsl(195, 53%, 89%) 25%, hsl(195, 23%, 79%) 50%, hsl(195, 43%, 89%) 70%, hsl(0, 0%, 100%) 99%);
+    background-size: 300%;
+    background-position: left;
+    animation-name:gradient-change;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
   }
+
+  @keyframes gradient-change {
+    0%{background-position: left;}
+    100%{background-position: right;}
+  }
+
+
+  @keyframes nav-width {
+    0%{
+      width: 0;
+    }
+    100% {
+      width: 28.422rem;
+    }
+  }
+  
+  @supports not (-ms-ime-align: auto) {
+
+    details summary { 
+      cursor: pointer;
+    }
+  
+    details summary > * { 
+      display: inline;
+    }
+  
+    /* Plus any other <details>/<summary> styles you want IE to ignore.*/
+  } 
+
+
+/* HEADER */
   
   .hder-1 {
     width: 100%;
     position: relative;
   }
 
+
+/*  FLEX BOX FOR H1 AND NAV  */
+
+
   .flx-row-ctnr{
       display: flex;
-      flex-flow:row nowrap;
+      flex-flow:row wrap;
       width: 100%;
       justify-content: center;
+      align-items: center;
+      min-height: 90vh;
   }
+
   
+
+  /* H1 */
+
   .hd-1 {
-    flex: 2;
     font-size: var(--hd-1-mj-thrd);
     margin: 3.052rem 0 3.815rem 3.815rem;
     font-weight:normal;
     line-height:1.2;
     width: 70%;
+    color: #0B5770;
+    flex: 2;
   }
 
+  /* NAV (CONTENTS) */
+
+.contents-nav-1{
+  flex: 1;
+  margin-top: 1.250rem;
+  overflow: clip;
+  margin-right: 4.768rem;
+  max-width: 28.422rem;
+}
+
+.contents-div-2 {
+  padding: 0 1rem;
+  border-right: solid hsl(195deg 83% 28%) 5px;
+  text-align: right;
+}
+
+.contents-heading-3 {
+  font-size: var(--hd-5-mj-thrd) ;
+  padding: 0;
+  margin: 0;
+  color: hsl(195deg 33% 40%);
+}
+
+.contents-li-5 {
+    list-style-type: none;
+    text-align: right;
+    line-height: 1.8;
+    padding: 0;
+}
+
+.contents-a-6{
+  position: relative;
+}
+
+.contents-a-6:link {
+  font-size: var(--nav-1) ;
+  color: hsl(195deg 23% 50%);
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contents-a-6:visited{
+  color: hsl(195deg 13% 55%);
+}
+
+.contents-a-6:hover{
+  color:hsl(195deg 83% 28%);
+  font-style: italic;
+  transition: all 0.3s ease-in-out;
+}
+    
+  .contents-a-6:active {
+    color: hsl(195, 73%, 43%);
+    transition:0.1s ease-in-out;
+  }
+    
+ .contents-a-6::before{
+   content: "";
+   width: 0;
+   height: 3.25px;
+   visibility: hidden;
+   background-color: hsl(195deg 83% 28%);
+   position: absolute;
+   bottom:4px;
+   left: 0;
+   transition: all 0.3s ease-in-out;
+   transition-property: width, visibility, background-color;
+ } 
+
+ .contents-a-6:hover::before{
+ visibility: visible;
+ width: 100%;
+ }
+
+ .contents-a-6:active::before{
+  background-color: hsl(195deg 73% 43%);
+  transition: 0.1s ease-in-out;
+}
+ 
+ 
+    
+/* DEFINITION ASIDE */
+
+    
+.dfn-aside {
+
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+ /*  circle navigation feature - experiment
+  
   .circle-nav{
       flex: 1;
   }
@@ -44,23 +208,4 @@
       transform: rotateZ(15deg);
   }
 
-  .text a{ 
-      display: inline-block;
-      padding: 5px;
-      background-color: aqua;
-  }
-  
-  
-  .tagline-container {
-    font-size: clamp(var(--tl-1), 1.2rem, 1rem);
-    width: 44.409rem;
-  }
-
-.internal-nav{
-    font-size: var(--tl-1);
-}
-
-.internal-ul {
-    list-style-type: none;
-
-}
+  */
