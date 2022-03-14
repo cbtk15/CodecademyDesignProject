@@ -1,11 +1,14 @@
 :root{
+
+  /* Font Sizes */
+
     --hd-1-gld: ;
     --hd-1-mj-thrd:11.642rem;
-
-    --hd-2-mj-thrd:4.768rem;
-    --hd-3-mj-thrd:3.815rem;
-    --hd-4-mj-thrd:3.052rem;
-    --hd-5-mj-thrd:2.441rem;
+    --hd-2-mj-thrd: 7.451rem;
+    --hd-3-mj-thrd:4.768rem;
+    --hd-4-mj-thrd:3.815rem;
+    --hd-5-mj-thrd:3.052rem;
+    --hd-6-mj-thrd:2.441rem;
 
     --tl-1:1.563rem;
 
@@ -13,16 +16,40 @@
     
     --aside-hd:1.563rem;
     --aside-p:1.25rem;
+
+    --art-p:1.25rem;
+
+    /* Colors */
+
+    --dark-clr: hsl(195deg 82% 24%);
+    --medium-clr:hsl(195, 33%, 40%);
+    --light-clr:hsl(195, 43%, 89%);
+    
+    --sq-prp:#CF84DB;
+    --sq-org:#CC9052;
+    --sq-grn:#97CC5C;
+    --sq-blue:#52ADCC;
+
+    --wht:hsl(0, 0%, 100%);
+
+
+    /* Links */
+
+    --
+
   }
  
+  html{
+    scroll-padding-top: 11.642rem;
+  }
 
   body{
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(90deg, hsl(195, 53%, 89%) 25%, hsl(195, 23%, 79%) 50%, hsl(195, 43%, 89%) 70%, hsl(0, 0%, 100%) 99%);
+    background: linear-gradient(90deg, hsl(195, 53%, 92%) 25%, hsl(195, 23%, 79%) 50%, hsl(195, 43%, 89%) 70%, hsl(0, 0%, 100%) 99%);
     background-size: 300%;
     background-position: left;
     animation-name:gradient-change;
-    animation-duration: 5s;
+    animation-duration: 4s;
     animation-delay: 1s;
     animation-fill-mode: forwards;
   }
@@ -107,16 +134,20 @@
 }
 
 .contents-heading-3 {
-  font-size: var(--hd-5-mj-thrd) ;
+  font-size: var(--hd-6-mj-thrd) ;
   padding: 0;
   margin: 0;
   color: hsl(195deg 33% 40%);
 }
 
+.contents-ul-4{
+  margin-top: 0.8rem;
+}
+
 .contents-li-5 {
     list-style-type: none;
     text-align: right;
-    line-height: 1.8;
+    line-height: 1.9;
     padding: 0;
 }
 
@@ -130,20 +161,23 @@
   text-decoration: none;
   padding: 0;
   margin: 0;
+  letter-spacing: 0.05em;
+
+
 }
 
 .contents-a-6:visited{
-  color: hsl(195deg 13% 55%);
+  color: hsl(195deg 23% 55%);
 }
 
 .contents-a-6:hover{
-  color:hsl(195deg 83% 28%);
+  color:hsl(195deg 93% 35%);
   font-style: italic;
   transition: all 0.3s ease-in-out;
 }
     
   .contents-a-6:active {
-    color: hsl(195, 73%, 43%);
+    color: hsl(195, 83%, 43%);
     transition:0.1s ease-in-out;
   }
     
@@ -152,7 +186,7 @@
    width: 0;
    height: 3.25px;
    visibility: hidden;
-   background-color: hsl(195deg 83% 28%);
+   background-color: hsl(195deg 93% 35%);
    position: absolute;
    bottom:4px;
    left: 0;
@@ -166,36 +200,190 @@
  }
 
  .contents-a-6:active::before{
-  background-color: hsl(195deg 73% 43%);
+  background-color: hsl(195deg 83% 43%);
   transition: 0.1s ease-in-out;
 }
- 
- 
-    
-/* DEFINITION ASIDE */
 
+/* Back to the top Icon */
+
+.back2thetop{
+  position: sticky;
+  background-color: var(--wht);
+  color: var(--dark-clr);
+  border: var(--dark-clr) solid 2px;
+  padding: 5px;
+  border-radius: 50%;
+  float: right;
+  margin-right: 1.563rem;
+  top:3.815rem;
+}
+
+.back2thetop a{
+  text-decoration: none;
+}
+
+/* General section styling */
+
+.sct{
+  margin: 3.815rem auto;
+}  
+
+.hder-2{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hd-2 {
+  font-size: var(--hd-2-mj-thrd);
+  font-weight: normal;
+  color: var(--dark-clr);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Section Colors */
+
+/* .sct2{
+  background: linear-gradient(hsla(0deg,0%,0%,0), var(--sq-prp));
+}
+
+.sct3{
+  background: linear-gradient(hsla(0deg,0%,0%,0), var(--sq-prp));
+} */
     
-.dfn-aside {
+/* Section 1 */
+
+section.sct1 {
+  margin-top: 0rem;
+}
+
+
+  /* Chapter/Article Board */
+
+ .Board {
+  margin: 1.25rem auto 7.451rem;
+  box-sizing: border-box;
+  background-color: var(--wht);
+  height: 35.527rem;
+  padding: 1.953rem 0.8rem;
+  overflow-y: scroll;
+  border-radius: 4.768rem;
+  box-shadow: 0 0 4.768rem 1.25rem hsl(0, 0%, 0%, 0.3), 0 0  1.25rem -1rem hsl(195deg, 83%, 3%, 0.8 );
+  display: flow;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  max-width: 69.389rem;
+
+  
 
 }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+.art-content{
+width: 70%;
+display: inline-block;
+}
+
+.hding-3{
+  font-size: var(--hd-6-mj-thrd);
+  text-align: center;
+  color: var(--dark-clr);
+  position: sticky;
+  top: -3.052rem;
+  margin-bottom: 0;
+  padding-top: 3.052rem;
+  padding-bottom: 2.441rem;
+  background: linear-gradient( var(--wht) 75%, hsla(0deg,0%,0%,0));
+}
+
+.art-p{
+font-size: var(--art-p);
+color: var(--medium-clr);
+line-height: 1.5;
+max-width: 55ch;
+}
 
 
+/* Chapter Nav */
+
+.chapter-nav { 
+  box-sizing: border-box;
+  position: sticky;
+  top: 0rem;
+  padding-top: 3.052rem;
+  padding-bottom: 2.441rem;
+  float: left;
+  width: 18.19rem;
+  padding: 2.441rem;
+}
+
+.ch-nav-heading-3{
+font-size: var(--hd-6-mj-thrd);
+color: var(--medium-clr);
+margin-bottom: 1.563rem;
+}
+
+.ch-nav-ul-4 {
+  margin: 0;
+  padding: 0;
+display: flex;
+flex-direction: column;
+width: fit-content;
+}
+
+.ch-nav-li-5{
+  display: inline-block;
+  position: relative;
+  margin-bottom: 1.563rem;
+}
+    
+.ch-nav-a-6:link{
+ text-decoration: none;
+ font-size: var(--nav-1);
+ color: hsl(195deg 43% 50%);
+ text-decoration: none;
+ padding: 0;
+}
+
+.ch-nav-a-6:visited{
+  color: hsl(195deg 33% 45%);
+}
+    
+.ch-nav-a-6:hover{
+  color:hsl(195deg 93% 35%);
+  transition: all 0.3s ease-in-out;
+}
+    
+  .ch-nav-a-6:active {
+    color: hsl(195, 83%, 43%);
+    transition:0.1s ease-in-out;
+  }
+     
+  .ch-nav-a-6::before{
+    content: "";
+    width: 0;
+    height: 3.25px;
+    visibility: hidden;
+    background-color: hsl(195deg 93% 35%);
+    position: absolute;
+    bottom:0px;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+    transition-property: width, visibility, background-color;
+  }
+
+  .ch-nav-a-6:hover::before{
+    visibility: visible;
+    width: 100%;
+  }
+
+  .ch-nav-a-6:active::before{
+    background-color: hsl(195deg 83% 43%);
+    transition: 0.1s ease-in-out;
+  }
+    
 
  /*  circle navigation feature - experiment
   
@@ -209,3 +397,37 @@
   }
 
   */
+  
+ /* DEFINITION ASIDE 
+   
+.dfn-aside {
+  position: sticky;
+  display: inline-block;
+  float: right;
+  margin-right: -4.768rem;
+  background-color: var(--dark-clr);
+  padding: 0.8rem;
+  border-radius: 1.25rem;
+  color: var(--light-clr);
+  top: 33.815rem;
+}
+
+.aside-internal {
+  margin-top: 0.8rem;
+  width: fit-content;
+  padding:  0.8rem;
+  background-color: var(--medium-clr);
+  border-radius: 1.25rem;
+
+}
+
+.aside-p{
+  max-width: 20ch;
+  text-align: left;
+  color: var(--light-clr);
+  font-size: var(--aside-p);
+  padding: 0;
+  margin: 0;
+  line-height: 1.35;
+}
+ */
