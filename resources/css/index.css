@@ -29,7 +29,8 @@
     --dull-clr:hsl(195, 13%, 49%);
 
     
-    --sq-prp:rgb(208, 132, 219);
+    --sq-prp:hsl(292, 75%, 79%);
+    --sq-prp-visited: hsl(292, 55%, 69%);
     --sq-org:rgb(203, 143, 82);
     --sq-grn:rgb(152, 204, 92);
     --sq-blue:rgb(82, 173, 203);
@@ -597,6 +598,44 @@ section.sct1 {
     max-width: fit-content;
     margin: 3.052rem auto;
   }
+
+  /* Footer */
+
+  .footer{
+    width: 100%;
+    background-color: var(--dark-clr);
+    height: 7.451rem;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .footer-link:link{
+    color: var(--sq-blue-under);
+    text-decoration: none;
+  }
+
+  .footer-link:visited{
+    color: var(--sq-prp-visited);
+    text-decoration: none;
+  }
+
+  .footer-link:hover {
+  color: var(--sq-grn);
+  background-color: var(--medium-clr);
+  padding: 0.2rem;
+  transition: padding 0.2s ease-out;
+  border-radius: 0.8rem;
+  }
+
+  .footer-link:active{
+    color: var(--sq-org);
+    transform: translateY(1px) ;
+    background-color:var(--medium-clr);
+    padding: 0.8rem;
+    border-radius: 0.8rem;
+  }
+
+
 
  /*  circle navigation feature - experiment
   
