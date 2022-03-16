@@ -9,37 +9,40 @@
     --hd-4-mj-thrd:3.815rem;
     --hd-5-mj-thrd:3.052rem;
     --hd-6-mj-thrd:2.441rem;
+    --hd-7-mj-thrd:1.563rem;
 
-    --tl-1:1.563rem;
+    --tl-1:1.25rem;
 
-    --nav-1: 1.563rem;
+    --nav-1: 1.25rem;
     
     --aside-hd:1.563rem;
-    --aside-p:1.25rem;
+    --aside-p:1rem;
 
     --art-p:1.25rem;
 
     /* Colors */
 
-    --dark-clr: hsl(195deg 82% 24%);
-    --medium-clr:hsl(195, 33%, 40%);
-    --light-clr:hsl(195, 43%, 89%);
+    --dark-clr: #0b566f;
+    --medium-clr:rgb(68, 119, 136);
+    --light-clr:rgb(215, 233, 239);
+
+    --dull-clr:hsl(195, 13%, 49%);
+
     
-    --sq-prp:#CF84DB;
-    --sq-org:#CC9052;
-    --sq-grn:#97CC5C;
-    --sq-blue:#52ADCC;
+    --sq-prp:rgb(208, 132, 219);
+    --sq-org:rgb(203, 143, 82);
+    --sq-grn:rgb(152, 204, 92);
+    --sq-blue:rgb(82, 173, 203);
+    --sq-blue-under: hsl(195, 44%, 46%);
 
     --wht:hsl(0, 0%, 100%);
 
 
     /* Links */
-
-    --
-
+    
   }
  
-  html{
+  html {
     scroll-padding-top: 11.642rem;
   }
 
@@ -82,6 +85,12 @@
     /* Plus any other <details>/<summary> styles you want IE to ignore.*/
   } 
 
+  /* Generic */
+
+  .flx-row {
+    display: flex;
+      flex-flow:row wrap;
+  }
 
 /* HEADER */
   
@@ -93,17 +102,13 @@
 
 /*  FLEX BOX FOR H1 AND NAV  */
 
-
-  .flx-row-ctnr{
-      display: flex;
-      flex-flow:row wrap;
+  .flx-header{
       width: 100%;
       justify-content: center;
       align-items: center;
       min-height: 90vh;
   }
 
-  
 
   /* H1 */
 
@@ -188,7 +193,7 @@
    visibility: hidden;
    background-color: hsl(195deg 93% 35%);
    position: absolute;
-   bottom:4px;
+   bottom:2px;
    left: 0;
    transition: all 0.3s ease-in-out;
    transition-property: width, visibility, background-color;
@@ -215,7 +220,9 @@
   border-radius: 50%;
   float: right;
   margin-right: 1.563rem;
-  top:3.815rem;
+  top:90%;
+  margin-top: 4.768rem;
+
 }
 
 .back2thetop a{
@@ -254,14 +261,8 @@
   background: linear-gradient(hsla(0deg,0%,0%,0), var(--sq-prp));
 } */
     
-/* Section 1 */
 
-section.sct1 {
-  margin-top: 0rem;
-}
-
-
-  /* Chapter/Article Board */
+/* Chapter/Article Board */
 
  .Board {
   margin: 1.25rem auto 7.451rem;
@@ -286,6 +287,7 @@ width: 70%;
 display: inline-block;
 }
 
+
 .hding-3{
   font-size: var(--hd-6-mj-thrd);
   text-align: center;
@@ -296,6 +298,37 @@ display: inline-block;
   padding-top: 3.052rem;
   padding-bottom: 2.441rem;
   background: linear-gradient( var(--wht) 75%, hsla(0deg,0%,0%,0));
+  z-index: 3;
+}
+
+.hding-4{
+  font-size: var(--hd-7-mj-thrd);
+  text-align: center;
+  position: sticky;
+  top: 2.441rem;
+  padding-top: 2.441rem;
+  padding-bottom: 2.441rem;
+  z-index:2;
+  color: var(--sq-blue);
+  background: linear-gradient( hsla(0deg,0%,0%,0) -0%,var(--wht) 20% 75%, hsla(0deg,0%,0%,0) );
+  
+}
+
+.h4-tl {
+  font-size: var(--tl-1);
+  color: var(--dark-clr);
+  text-align: left;
+  margin: -2.441rem auto 3.052rem;
+  line-height: 1.5;
+  max-width: 55ch;
+  
+}
+
+.hding-5{
+  font-size: var(--aside-hd);
+  color: var(--sq-blue-under);
+  margin: 0;
+  text-align: center;
 }
 
 .art-p{
@@ -303,6 +336,8 @@ font-size: var(--art-p);
 color: var(--medium-clr);
 line-height: 1.5;
 max-width: 55ch;
+text-align: left;
+margin: 1.563rem auto;
 }
 
 
@@ -320,7 +355,7 @@ max-width: 55ch;
 }
 
 .ch-nav-heading-3{
-font-size: var(--hd-6-mj-thrd);
+font-size: var(--aside-hd);
 color: var(--medium-clr);
 margin-bottom: 1.563rem;
 }
@@ -340,15 +375,14 @@ width: fit-content;
 }
     
 .ch-nav-a-6:link{
- text-decoration: none;
  font-size: var(--nav-1);
- color: hsl(195deg 43% 50%);
+ color: hsl(195deg 53% 50%);
  text-decoration: none;
  padding: 0;
 }
 
 .ch-nav-a-6:visited{
-  color: hsl(195deg 33% 45%);
+  color: hsl(195deg 43% 45%);
 }
     
 .ch-nav-a-6:hover{
@@ -384,6 +418,185 @@ width: fit-content;
     transition: 0.1s ease-in-out;
   }
     
+  .sub-menu {
+    max-height: 0;
+    transition: max-height 0.5s;
+    overflow-y: hidden;
+  }
+
+  .sub-menu a {
+   display: block;
+   margin: 1rem 0rem;
+   color: var(--sq-blue);
+   font-size: 1rem;
+   text-align: left;
+  }
+
+  .ch-nav-li-5:target .sub-menu{
+    max-height: 10em;
+  }
+
+
+  /* Section 1 */
+
+section.sct1 {
+  margin-top: 0rem;
+}
+
+
+ /* Section 2: Colors */
+
+ .color-row {
+
+  justify-content: start;
+  gap: 1.563rem;
+ }
+
+  .colorsample{
+  flex: 1 1 2.441rem;
+   padding: 1.563rem 0.8rem;
+   text-align: center;
+   line-height: 1.8;
+   border-radius: 15%;
+   margin: 1.563rem 0;
+  }
+
+  #prm-drk {
+    background-color: var(--dark-clr);
+    color: var(--wht);
+  }
+
+  #prm-med {
+    background-color: var(--medium-clr);
+    color: var(--wht);
+  }
+
+  #prm-light {
+    background-color: var(--light-clr);
+    color: var(--dark-clr);
+  }
+
+  #sq-blue {
+    background-color: var(--sq-blue);
+    color: var(--wht);
+  }
+
+  #sq-grn {
+    background-color: var(--sq-grn);
+    color: var(--wht);
+  }
+
+  #sq-org{
+    background-color: var(--sq-org);
+    color: var(--wht);
+
+  }
+
+  #sq-purple {
+    background-color: var(--sq-prp);
+    color: var(--wht);
+  }
+
+  .clr-name{
+    text-decoration: underline;
+  }
+
+   /* Section 2: Fonts */
+
+   .tab-cap{
+    font-size: var(--tl-1);
+    color: var(--dark-clr);
+    font-weight: 400;
+    text-align: center;
+  }
+  
+  .font-tab{
+    margin: 2.441rem auto;
+  }
+  
+  .font-tab *{ 
+    padding: 0.8rem;
+  }
+  
+  .font-cat{
+    font-size: 0.8rem;
+    color: var(--dull-clr);
+    font-weight: 400;
+    text-align: left;
+  }
+  
+  .fnt-sample{
+    text-align: center;
+    max-width: 45ch;
+    margin: 1.563rem auto;
+  }
+  
+  .light ~ td{
+  font-weight: 100;
+  }
+  
+  .reg ~ td{
+  font-weight: 400;
+  }
+  
+  .SemiBold ~ td{
+    font-weight: 600;
+  }
+  
+  .bold ~ td{
+    font-weight: 700;
+  }
+  
+  .font-cat+td{
+    font-style: italic;
+  }
+  
+  .pop{
+    font-family: 'Poppins';
+  }
+  .Mont {
+    font-family: 'Montserrat';
+  }
+  .ssans{
+    font-family: 'Source Sans Pro';
+  }
+  
+  .scode{
+    font-family: 'Source Code Pro';
+  }
+  
+  .gar{
+    font-family: 'EB Garamond';
+  }
+
+  .code-box{
+    margin: 1.25rem auto 2.441rem;
+    padding: 0.8rem;
+    background-color: var(--light-clr);
+    max-width: 55ch;
+    border-radius: 5ch;
+  }
+
+  .code-box *{
+    font-family: 'Source Code Pro', monospace;
+    color: var(--dark-clr);
+    line-height: 1.5;
+    max-height: var(--hd-1-mj-thrd);
+    overflow-y: scroll;
+  }
+  .reset{
+    position: relative;    
+    text-align: center;
+    margin: 0px auto;
+    padding: 0;
+    max-width: 25ch;
+    display: block;
+  }
+
+  #example1{
+    max-width: fit-content;
+    margin: 3.052rem auto;
+  }
 
  /*  circle navigation feature - experiment
   

@@ -6,17 +6,16 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="./resources/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="./resources/css/index.css">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-<link href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@300&family=Poppins:ital,wght@0,400;0,700;1,400;1,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&family=Source+Code+Pro:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
   <body>
 
     <header class="hder-1">
 
-    <div class="flx-row-ctnr">
+    <div class="flx-row flx-header">
 
       <h1 class="hd-1" id="top">Design<br>System</h1>
       
@@ -132,49 +131,143 @@
 
 
       <header class="hder-2">
-        <h2 class="hd-2" id="brand">Foundations</h2>
+        <h2 class="hd-2" id="foundation">Foundations</h2>
       </header>
 
       <article class="Board">
 
         <nav class="chapter-nav">
+          <h3 class="ch-nav-heading-3">Contents</h3>
           <ul class="ch-nav-ul-4">
-             <li class="ch-nav-li-5"><a href="#b1-ch1" class="ch-nav-a-6">Aim &amp; Mission</a></li>
-             <li class="ch-nav-li-5"><a href="#b1-ch2" class="ch-nav-a-6">Character &amp; Personality</a></li>
-             <li class="ch-nav-li-5"><a href="#b1-ch3" class="ch-nav-a-6">Values</a></li>
+             <li class="ch-nav-li-5"><a href="#b2-ch1" class="ch-nav-a-6">Colors</a></li>
+             <li class="ch-nav-li-5" id="typography"><a href="#typography" class="ch-nav-a-6 btn">Typography</a>
+                <div class="sub-menu">
+                  <a href="#fontfamily">Font Family</a>
+                  <a href="#textstyles">Text Styles</a>
+                </div>
+             </li>
+             <li class="ch-nav-li-5"><a href="#b2-ch3" class="ch-nav-a-6">Logos</a></li>
+             <li class="ch-nav-li-5"><a href="#b2-ch4" class="ch-nav-a-6">Icons</a></li>
            </ul>
        </nav>
 
         <div class="art-content">
-          <section class="board-sct" id="b1-ch1">
+          <section class="board-sct" id="b2-ch1">
 
-          <h3 class="hding-3">Aim &amp; Mission</h3>
+          <h3 class="hding-3">Colors</h3>
     
 
-        <p class="art-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla totam ratione fugit reiciendis aperiam ullam velit, dolorum nobis quo molestias! Fuga corporis non consequuntur repellat ipsa amet quam. Esse, voluptates? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis rerum modi soluta saepe eaque consequuntur dolore, enim nesciunt inventore vel doloremque, deleniti atque est illo, eum ducimus ad explicabo in! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique facilis at quisquam tenetur architecto beatae hic quis pariatur, praesentium laborum odio et veniam fugit ut. Sit magni commodi aperiam error.</p>
+        <p class="art-p">The Main Brand Colors are Monochromatic in their nature.</p>
+        
+        <div class="flx-row color-row">
+          <div class="colorsample" id="prm-drk"><p><span class="clr-name">Dark Blue</span><br>#0b566f<br>hsl(195deg 82% 24%)<br>rgb(11, 86, 111)</p></div>
+          <div class="colorsample" id="prm-med"><p><span class="clr-name">Medium Blue</span><br>#447788<br>hsl(195deg, 33%, 40%)<br>rgb(68, 119, 136)</p></div>
+          <div class="colorsample" id="prm-light"><p><span class="clr-name">Light Blue</span><br>#d7e9ef<br>hsl(195deg, 43%, 89%)<br>rgb(215, 233, 239)</p></div>
+        </div>
 
-        <p class="art-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla totam ratione fugit reiciendis aperiam ullam velit, dolorum nobis quo molestias! Fuga corporis non consequuntur repellat ipsa amet quam. Esse, voluptates? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis rerum modi soluta saepe eaque consequuntur dolore, enim nesciunt inventore vel doloremque, deleniti atque est illo, eum ducimus ad explicabo in! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique facilis at quisquam tenetur architecto beatae hic quis pariatur, praesentium laborum odio et veniam fugit ut. Sit magni commodi aperiam error.</p>
+        <p class="art-p">However, When more contrast is needed then a square color scheme is used using 4 colors evenly spaced around the color wheel based off of the dominent monocramatic brand color's hue.</p>
+
+        <div class="flx-row color-row">
+          <div class="colorsample" id="sq-blue"><p><span class="clr-name">Square Blue</span><br>#52ADCC<br>hsl(195, 54%, 56%)<br>rgb(82, 173, 203)</p></div>
+          <div class="colorsample" id="sq-grn"><p><span class="clr-name">Square Green</span><br>C#97CC5C<br>hsl(88, 52%, 58%)<br>rgb(152, 204, 92)</p></div>
+          <div class="colorsample" id="sq-org"><p><span class="clr-name">Square Orange</span><br>#CC9052<br>hsl(30, 54%, 56%)<br>rgb(203, 143, 82)</p></div>
+          <div class="colorsample" id="sq-purple"><p>Square Purple<br>#CF84DB<br>hsl(292, 55%, 69%)<br>rgb(208, 132, 219)</p></div>
           </section>
 
-          <section class="board-sct" id="b1-ch2">
+          <section class="board-sct" id="fontfamily">
           
-          <h3 class="hding-3">Character &amp; Personality</h3>
-          
-        <p class="art-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla totam ratione fugit reiciendis aperiam ullam velit, dolorum nobis quo molestias! Fuga corporis non consequuntur repellat ipsa amet quam. Esse, voluptates? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis rerum modi soluta saepe eaque consequuntur dolore, enim nesciunt inventore vel doloremque, deleniti atque est illo, eum ducimus ad explicabo in! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique facilis at quisquam tenetur architecto beatae hic quis pariatur, praesentium laborum odio et veniam fugit ut. Sit magni commodi aperiam error.</p>
+          <h3 class="hding-3">Typography</h3>
+          <h4 class="hding-4">Font Family</h4>
 
-        <p class="art-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla totam ratione fugit reiciendis aperiam ullam velit, dolorum nobis quo molestias! Fuga corporis non consequuntur repellat ipsa amet quam. Esse, voluptates? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis rerum modi soluta saepe eaque consequuntur dolore, enim nesciunt inventore vel doloremque, deleniti atque est illo, eum ducimus ad explicabo in! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique facilis at quisquam tenetur architecto beatae hic quis pariatur, praesentium laborum odio et veniam fugit ut. Sit magni commodi aperiam error.</p>
+        <p class="h4-tl">As much as typography is what language looks like, we know that even sweet messages can come from ugly messengers. However, we want a subtle and beautiful personality to show through the modest type we use, one of which puts any user as ease when they see it.</p>
+        
+                <table  class="font-tab pop"><caption class="tab-cap">Font-Family: Poppins</caption>
+          <tr><th></th><th class="font-cat">Italic</th><th class="font-cat">Regular</th></tr>
+          <tr><th class="font-cat light">Light</th><td>For God so Loved the World</td><td>that He Gave His Only Son...</td></tr>
+          <tr><th class="font-cat reg">Regular</th><td>For God so Loved the World</td><td>that He Gave His Only Son...</td></tr>
+          <tr><th class="font-cat bold">Bold</th><td>For God so Loved the World</td><td>that He Gave His Only Son...</td></tr>
+        </table>
+
+        <table  class="font-tab Mont"><caption class="tab-cap">Font-Family: Montserrat</caption>
+          <tr><th></th><th class="font-cat">Italic</th><th class="font-cat">Regular</th></tr>
+          <tr><th class="font-cat bold">Bold</th><td>For God so Loved the World</td><td>that He Gave His Only Son...</td></tr>
+        </table>
+
+        <table  class="font-tab ssans"><caption class="tab-cap">Font-Family: Source Sans Pro</caption>
+          <tr><th></th><th class="font-cat">Italic</th><th class="font-cat">Regular</th></tr>
+          <tr><th class="font-cat reg">Regular</th><td>For God so Loved the World</td><td>that He Gave His Only Son...</td></tr>
+          <tr><th class="font-cat SemiBold">Semi-Bold</th><td>For God so Loved the World</td><td>that He Gave His Only Son...</td></tr>
+          <tr><th class="font-cat bold">Bold</th><td>For God so Loved the World</td><td>that He Gave His Only Son...</td></tr>
+        </table>
+        
+        <table  class="font-tab scode"><caption class="tab-cap">Font-Family: Source Code Pro</caption>
+          <tr><th></th><th class="font-cat">Italic</th><th class="font-cat">Regular</th></tr>
+          <tr><th class="font-cat reg">Regular</th><td>For God so Loved the World</td><td>that He Gave His Only Son...</td></tr>
+          <tr><th class="font-cat SemiBold">Semi-Bold</th><td>For God so Loved the World</td><td>that He Gave His Only Son...</td></tr>
+          <tr><th class="font-cat bold">Bold</th><td>For God so Loved the World</td><td>that He Gave His Only Son...</td></tr>
+        </table>
+
+        <table  class="font-tab gar"><caption class="tab-cap">Font-Family: Garamond</caption>
+          <tr><th></th><th class="font-cat">Italic</th><th class="font-cat">Regular</th></tr>
+          <tr><th class="font-cat reg">Regular</th><td>For God so Loved the World</td><td>that He Gave His Only Son...</td></tr>
+        </table>
+
+        <h4 class="hding-4" id="textstyles">Text Styles</h4>
+
+        <p class="art-p">Here are some styles for different heading levels on a desktop viewport.</p>
+
+          <p class="reset hd-1">H1</p>
+          <div class="code-box">
+            <pre>
+              .Main-Heading{
+              font-size: 11.642rem;
+              font-weight:normal;
+              line-height:1.2;
+              color: #0B5770;}
+            </pre>
+          </div>
+
+          <p class="reset hd-2">H2</p>
+          <div class="code-box">
+            <pre>
+              .Section-Heading, .Main-Nav-Heading{
+              font-size: 7.451rem;
+              font-weight: normal;
+              color: #0b566f;}
+            </pre>
+          </div>
+
+          <p class="reset hding-3">H3</p>
+          <div class="code-box">
+            <pre>
+              .SubSection-heading {
+              font-size: 2.441rem;
+              font-weight: normal;
+              color: #0b566f;}
+            </pre>
+          </div>
 
         </section>
 
-        <section class="board-sct" id="b1-ch3">
+        <section class="board-sct" id="b2-ch3">
 
-          <h3 class="hding-3">Values</h3>
+          <h3 class="hding-3">Logos</h3>
 
 
         <p class="art-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla totam ratione fugit reiciendis aperiam ullam velit, dolorum nobis quo molestias! Fuga corporis non consequuntur repellat ipsa amet quam. Esse, voluptates? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis rerum modi soluta saepe eaque consequuntur dolore, enim nesciunt inventore vel doloremque, deleniti atque est illo, eum ducimus ad explicabo in! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique facilis at quisquam tenetur architecto beatae hic quis pariatur, praesentium laborum odio et veniam fugit ut. Sit magni commodi aperiam error.</p>
         
 
       </section>
+
+      <section class="board-sct" id="b2-ch4">
+
+        <h3 class="hding-3">Icons</h3>
+
+
+      <p class="art-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla totam ratione fugit reiciendis aperiam ullam velit, dolorum nobis quo molestias! Fuga corporis non consequuntur repellat ipsa amet quam. Esse, voluptates? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis rerum modi soluta saepe eaque consequuntur dolore, enim nesciunt inventore vel doloremque, deleniti atque est illo, eum ducimus ad explicabo in! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique facilis at quisquam tenetur architecto beatae hic quis pariatur, praesentium laborum odio et veniam fugit ut. Sit magni commodi aperiam error.</p>
+      
+
+    </section>
       </div>
       </article>
       
@@ -202,18 +295,19 @@
         <div class="chapter-nav">
 
         <nav aria-label="Chapter Navigation">
+          <h3 class="ch-nav-heading-3">Contents</h3>
           <ul class="ch-nav-ul-4">
-             <li class="ch-nav-li-5"><a href="#b1-ch1" class="ch-nav-a-6">Aim &amp; Mission</a></li>
-             <li class="ch-nav-li-5"><a href="#b1-ch2" class="ch-nav-a-6">Character &amp; Personality</a></li>
-             <li class="ch-nav-li-5"><a href="#b1-ch3" class="ch-nav-a-6">Values</a></li>
+             <li class="ch-nav-li-5"><a href="#b3-ch1" class="ch-nav-a-6">Voice &amp; Tone</a></li>
+             <li class="ch-nav-li-5"><a href="#b3-ch2" class="ch-nav-a-6">Language &amp; Writing Guidelines</a></li>
+             <li class="ch-nav-li-5"><a href="#b3-ch3" class="ch-nav-a-6">Vocabulary</a></li>
            </ul>
        </nav>
         </div>
 
         <div class="art-content">
-          <section class="board-sct" id="b1-ch1">
+          <section class="board-sct" id="b3-ch1">
 
-          <h3 class="hding-3">Aim &amp; Mission</h3>
+          <h3 class="hding-3">Voice &amp; Tone</h3>
     
 
         <p class="art-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla totam ratione fugit reiciendis aperiam ullam velit, dolorum nobis quo molestias! Fuga corporis non consequuntur repellat ipsa amet quam. Esse, voluptates? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis rerum modi soluta saepe eaque consequuntur dolore, enim nesciunt inventore vel doloremque, deleniti atque est illo, eum ducimus ad explicabo in! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique facilis at quisquam tenetur architecto beatae hic quis pariatur, praesentium laborum odio et veniam fugit ut. Sit magni commodi aperiam error.</p>
@@ -221,9 +315,9 @@
         <p class="art-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla totam ratione fugit reiciendis aperiam ullam velit, dolorum nobis quo molestias! Fuga corporis non consequuntur repellat ipsa amet quam. Esse, voluptates? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis rerum modi soluta saepe eaque consequuntur dolore, enim nesciunt inventore vel doloremque, deleniti atque est illo, eum ducimus ad explicabo in! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique facilis at quisquam tenetur architecto beatae hic quis pariatur, praesentium laborum odio et veniam fugit ut. Sit magni commodi aperiam error.</p>
           </section>
 
-          <section class="board-sct" id="b1-ch2">
+          <section class="board-sct" id="b3-ch2">
           
-          <h3 class="hding-3">Character &amp; Personality</h3>
+          <h3 class="hding-3">Language &amp; Writing Guidelines</h3>
           
         <p class="art-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla totam ratione fugit reiciendis aperiam ullam velit, dolorum nobis quo molestias! Fuga corporis non consequuntur repellat ipsa amet quam. Esse, voluptates? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis rerum modi soluta saepe eaque consequuntur dolore, enim nesciunt inventore vel doloremque, deleniti atque est illo, eum ducimus ad explicabo in! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique facilis at quisquam tenetur architecto beatae hic quis pariatur, praesentium laborum odio et veniam fugit ut. Sit magni commodi aperiam error.</p>
 
@@ -231,9 +325,9 @@
 
         </section>
 
-        <section class="board-sct" id="b1-ch3">
+        <section class="board-sct" id="b3-ch3">
 
-          <h3 class="hding-3">Values</h3>
+          <h3 class="hding-3">Vocabulary</h3>
 
 
         <p class="art-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla totam ratione fugit reiciendis aperiam ullam velit, dolorum nobis quo molestias! Fuga corporis non consequuntur repellat ipsa amet quam. Esse, voluptates? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis rerum modi soluta saepe eaque consequuntur dolore, enim nesciunt inventore vel doloremque, deleniti atque est illo, eum ducimus ad explicabo in! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique facilis at quisquam tenetur architecto beatae hic quis pariatur, praesentium laborum odio et veniam fugit ut. Sit magni commodi aperiam error.</p>
@@ -265,18 +359,18 @@
         <div class="chapter-nav">
 
         <nav aria-label="Chapter Navigation">
+          <h3 class="ch-nav-heading-3">Contents</h3>
           <ul class="ch-nav-ul-4">
-             <li class="ch-nav-li-5"><a href="#b1-ch1" class="ch-nav-a-6">Aim &amp; Mission</a></li>
-             <li class="ch-nav-li-5"><a href="#b1-ch2" class="ch-nav-a-6">Character &amp; Personality</a></li>
-             <li class="ch-nav-li-5"><a href="#b1-ch3" class="ch-nav-a-6">Values</a></li>
+             <li class="ch-nav-li-5"><a href="#b4-ch1" class="ch-nav-a-6">Breadcrumbs</a></li>
+             <li class="ch-nav-li-5"><a href="#b4-ch2" class="ch-nav-a-6">Buttons &amp; Links</a></li>
            </ul>
        </nav>
         </div>
 
         <div class="art-content">
-          <section class="board-sct" id="b1-ch1">
+          <section class="board-sct" id="b4-ch1">
 
-          <h3 class="hding-3">Aim &amp; Mission</h3>
+          <h3 class="hding-3">Breadcrumbs</h3>
     
 
         <p class="art-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla totam ratione fugit reiciendis aperiam ullam velit, dolorum nobis quo molestias! Fuga corporis non consequuntur repellat ipsa amet quam. Esse, voluptates? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis rerum modi soluta saepe eaque consequuntur dolore, enim nesciunt inventore vel doloremque, deleniti atque est illo, eum ducimus ad explicabo in! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique facilis at quisquam tenetur architecto beatae hic quis pariatur, praesentium laborum odio et veniam fugit ut. Sit magni commodi aperiam error.</p>
@@ -284,25 +378,64 @@
         <p class="art-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla totam ratione fugit reiciendis aperiam ullam velit, dolorum nobis quo molestias! Fuga corporis non consequuntur repellat ipsa amet quam. Esse, voluptates? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis rerum modi soluta saepe eaque consequuntur dolore, enim nesciunt inventore vel doloremque, deleniti atque est illo, eum ducimus ad explicabo in! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique facilis at quisquam tenetur architecto beatae hic quis pariatur, praesentium laborum odio et veniam fugit ut. Sit magni commodi aperiam error.</p>
           </section>
 
-          <section class="board-sct" id="b1-ch2">
+          <section class="board-sct" id="b4-ch2">
           
-          <h3 class="hding-3">Character &amp; Personality</h3>
+          <h3 class="hding-3">Buttons &amp; Links</h3>
           
-        <p class="art-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla totam ratione fugit reiciendis aperiam ullam velit, dolorum nobis quo molestias! Fuga corporis non consequuntur repellat ipsa amet quam. Esse, voluptates? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis rerum modi soluta saepe eaque consequuntur dolore, enim nesciunt inventore vel doloremque, deleniti atque est illo, eum ducimus ad explicabo in! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique facilis at quisquam tenetur architecto beatae hic quis pariatur, praesentium laborum odio et veniam fugit ut. Sit magni commodi aperiam error.</p>
+        <h4 class="hding-4">Nav Links</h4>
+        <p class="art-p">Main navigation links should be consistent as much as possible to enusre the user can identify the right affordances and interact with the links in a faster way. One way we can do this is by using a identifier which draws a underline from the left to the right when the user hovers over the nav link.</p>
 
-        <p class="art-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla totam ratione fugit reiciendis aperiam ullam velit, dolorum nobis quo molestias! Fuga corporis non consequuntur repellat ipsa amet quam. Esse, voluptates? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis rerum modi soluta saepe eaque consequuntur dolore, enim nesciunt inventore vel doloremque, deleniti atque est illo, eum ducimus ad explicabo in! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique facilis at quisquam tenetur architecto beatae hic quis pariatur, praesentium laborum odio et veniam fugit ut. Sit magni commodi aperiam error.</p>
+        <div ><a class="reset ch-nav-li-5 ch-nav-a-6" href="#example1" id="example1">Hover Example</a></div>
 
+        <p class="art-p">The animation <em>alone</em> is achieved using the following Css:</p>
+
+        <div class="code-box">
+          <pre>
+
+            /* Keyframes for the Underscore Animation */
+
+            @keyframes nav-width {
+              0%{
+                width: 0;
+              }
+              100% {
+                width: 28.422rem;
+              }
+            }
+
+            /* Link and Pseudo Element Rulesets */
+
+            .ch-nav-a-6:link{
+              text-decoration: none;
+             }
+                 
+            .ch-nav-a-6::before{
+                 content: "";
+                 width: 0;
+                 height: 3.25px;
+                 visibility: hidden;
+                 background-color: hsl(195deg 93% 35%);
+                 position: absolute;
+                 bottom:0px;
+                 left: 0;
+                 transition: all 0.3s ease-in-out;
+                 transition-property: width, 
+                 visibility, background-color;
+               }
+             
+               .ch-nav-a-6:hover::before{
+                 visibility: visible;
+                 width: 100%;
+               }
+             
+               .ch-nav-a-6:active::before{
+                 background-color: hsl(195deg 83% 43%);
+                 transition: 0.1s ease-in-out;
+               }
+          </pre>
+        </div>
         </section>
 
-        <section class="board-sct" id="b1-ch3">
-
-          <h3 class="hding-3">Values</h3>
-
-
-        <p class="art-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla totam ratione fugit reiciendis aperiam ullam velit, dolorum nobis quo molestias! Fuga corporis non consequuntur repellat ipsa amet quam. Esse, voluptates? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis rerum modi soluta saepe eaque consequuntur dolore, enim nesciunt inventore vel doloremque, deleniti atque est illo, eum ducimus ad explicabo in! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique facilis at quisquam tenetur architecto beatae hic quis pariatur, praesentium laborum odio et veniam fugit ut. Sit magni commodi aperiam error.</p>
-        
-
-      </section>
       </div>
       </article>
       
@@ -329,18 +462,19 @@
         <div class="chapter-nav">
 
         <nav aria-label="Chapter Navigation">
+          <h3 class="ch-nav-heading-3">Contents</h3>
           <ul class="ch-nav-ul-4">
-             <li class="ch-nav-li-5"><a href="#b1-ch1" class="ch-nav-a-6">Aim &amp; Mission</a></li>
-             <li class="ch-nav-li-5"><a href="#b1-ch2" class="ch-nav-a-6">Character &amp; Personality</a></li>
-             <li class="ch-nav-li-5"><a href="#b1-ch3" class="ch-nav-a-6">Values</a></li>
+             <li class="ch-nav-li-5"><a href="#b5-ch1" class="ch-nav-a-6">Forms</a></li>
+             <li class="ch-nav-li-5"><a href="#b5-ch2" class="ch-nav-a-6">Shapes</a></li>
+             <li class="ch-nav-li-5"><a href="#b5-ch3" class="ch-nav-a-6">Text Input</a></li>
            </ul>
        </nav>
         </div>
 
         <div class="art-content">
-          <section class="board-sct" id="b1-ch1">
+          <section class="board-sct" id="b5-ch1">
 
-          <h3 class="hding-3">Aim &amp; Mission</h3>
+          <h3 class="hding-3">Forms</h3>
     
 
         <p class="art-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla totam ratione fugit reiciendis aperiam ullam velit, dolorum nobis quo molestias! Fuga corporis non consequuntur repellat ipsa amet quam. Esse, voluptates? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis rerum modi soluta saepe eaque consequuntur dolore, enim nesciunt inventore vel doloremque, deleniti atque est illo, eum ducimus ad explicabo in! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique facilis at quisquam tenetur architecto beatae hic quis pariatur, praesentium laborum odio et veniam fugit ut. Sit magni commodi aperiam error.</p>
@@ -348,9 +482,9 @@
         <p class="art-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla totam ratione fugit reiciendis aperiam ullam velit, dolorum nobis quo molestias! Fuga corporis non consequuntur repellat ipsa amet quam. Esse, voluptates? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis rerum modi soluta saepe eaque consequuntur dolore, enim nesciunt inventore vel doloremque, deleniti atque est illo, eum ducimus ad explicabo in! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique facilis at quisquam tenetur architecto beatae hic quis pariatur, praesentium laborum odio et veniam fugit ut. Sit magni commodi aperiam error.</p>
           </section>
 
-          <section class="board-sct" id="b1-ch2">
+          <section class="board-sct" id="b5-ch2">
           
-          <h3 class="hding-3">Character &amp; Personality</h3>
+          <h3 class="hding-3">Shapes</h3>
           
         <p class="art-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla totam ratione fugit reiciendis aperiam ullam velit, dolorum nobis quo molestias! Fuga corporis non consequuntur repellat ipsa amet quam. Esse, voluptates? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis rerum modi soluta saepe eaque consequuntur dolore, enim nesciunt inventore vel doloremque, deleniti atque est illo, eum ducimus ad explicabo in! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique facilis at quisquam tenetur architecto beatae hic quis pariatur, praesentium laborum odio et veniam fugit ut. Sit magni commodi aperiam error.</p>
 
@@ -358,13 +492,12 @@
 
         </section>
 
-        <section class="board-sct" id="b1-ch3">
+        <section class="board-sct" id="b5-ch3">
 
-          <h3 class="hding-3">Values</h3>
+          <h3 class="hding-3">Text Input</h3>
 
 
         <p class="art-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla totam ratione fugit reiciendis aperiam ullam velit, dolorum nobis quo molestias! Fuga corporis non consequuntur repellat ipsa amet quam. Esse, voluptates? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis rerum modi soluta saepe eaque consequuntur dolore, enim nesciunt inventore vel doloremque, deleniti atque est illo, eum ducimus ad explicabo in! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique facilis at quisquam tenetur architecto beatae hic quis pariatur, praesentium laborum odio et veniam fugit ut. Sit magni commodi aperiam error.</p>
-        
 
       </section>
       </div>
@@ -393,18 +526,19 @@
         <div class="chapter-nav">
 
         <nav aria-label="Chapter Navigation">
+          <h3 class="ch-nav-heading-3">Contents</h3>
           <ul class="ch-nav-ul-4">
-             <li class="ch-nav-li-5"><a href="#b1-ch1" class="ch-nav-a-6">Aim &amp; Mission</a></li>
-             <li class="ch-nav-li-5"><a href="#b1-ch2" class="ch-nav-a-6">Character &amp; Personality</a></li>
-             <li class="ch-nav-li-5"><a href="#b1-ch3" class="ch-nav-a-6">Values</a></li>
+             <li class="ch-nav-li-5"><a href="#b6-ch1" class="ch-nav-a-6">Figma Files</a></li>
+             <li class="ch-nav-li-5"><a href="#b6-ch2" class="ch-nav-a-6">XD Files</a></li>
+             <li class="ch-nav-li-5"><a href="#b6-ch3" class="ch-nav-a-6">Sketch Design Kit</a></li>
            </ul>
        </nav>
         </div>
 
         <div class="art-content">
-          <section class="board-sct" id="b1-ch1">
+          <section class="board-sct" id="b6-ch1">
 
-          <h3 class="hding-3">Aim &amp; Mission</h3>
+          <h3 class="hding-3">Figma Files</h3>
     
 
         <p class="art-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla totam ratione fugit reiciendis aperiam ullam velit, dolorum nobis quo molestias! Fuga corporis non consequuntur repellat ipsa amet quam. Esse, voluptates? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis rerum modi soluta saepe eaque consequuntur dolore, enim nesciunt inventore vel doloremque, deleniti atque est illo, eum ducimus ad explicabo in! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique facilis at quisquam tenetur architecto beatae hic quis pariatur, praesentium laborum odio et veniam fugit ut. Sit magni commodi aperiam error.</p>
@@ -412,9 +546,9 @@
         <p class="art-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla totam ratione fugit reiciendis aperiam ullam velit, dolorum nobis quo molestias! Fuga corporis non consequuntur repellat ipsa amet quam. Esse, voluptates? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis rerum modi soluta saepe eaque consequuntur dolore, enim nesciunt inventore vel doloremque, deleniti atque est illo, eum ducimus ad explicabo in! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique facilis at quisquam tenetur architecto beatae hic quis pariatur, praesentium laborum odio et veniam fugit ut. Sit magni commodi aperiam error.</p>
           </section>
 
-          <section class="board-sct" id="b1-ch2">
+          <section class="board-sct" id="b6-ch2">
           
-          <h3 class="hding-3">Character &amp; Personality</h3>
+          <h3 class="hding-3">XD Files</h3>
           
         <p class="art-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla totam ratione fugit reiciendis aperiam ullam velit, dolorum nobis quo molestias! Fuga corporis non consequuntur repellat ipsa amet quam. Esse, voluptates? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis rerum modi soluta saepe eaque consequuntur dolore, enim nesciunt inventore vel doloremque, deleniti atque est illo, eum ducimus ad explicabo in! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique facilis at quisquam tenetur architecto beatae hic quis pariatur, praesentium laborum odio et veniam fugit ut. Sit magni commodi aperiam error.</p>
 
@@ -422,13 +556,12 @@
 
         </section>
 
-        <section class="board-sct" id="b1-ch3">
+        <section class="board-sct" id="b6-ch3">
 
-          <h3 class="hding-3">Values</h3>
+          <h3 class="hding-3">Sketch Design Kit</h3>
 
 
         <p class="art-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla totam ratione fugit reiciendis aperiam ullam velit, dolorum nobis quo molestias! Fuga corporis non consequuntur repellat ipsa amet quam. Esse, voluptates? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis rerum modi soluta saepe eaque consequuntur dolore, enim nesciunt inventore vel doloremque, deleniti atque est illo, eum ducimus ad explicabo in! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique facilis at quisquam tenetur architecto beatae hic quis pariatur, praesentium laborum odio et veniam fugit ut. Sit magni commodi aperiam error.</p>
-        
 
       </section>
       </div>
@@ -447,4 +580,3 @@
 
     </footer>
   </body>
-</html>
