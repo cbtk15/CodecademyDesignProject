@@ -278,11 +278,11 @@
 /* Section Colors */
 
 /* .sct2{
-  background: linear-gradient(hsla(0deg,0%,0%,0), var(--sq-prp));
+  background: linear-gradient(hsla(0deg,0%,100%,0), var(--sq-prp));
 }
 
 .sct3{
-  background: linear-gradient(hsla(0deg,0%,0%,0), var(--sq-prp));
+  background: linear-gradient(hsla(0deg,0%,100%,0), var(--sq-prp));
 } */
     
 
@@ -321,7 +321,7 @@ display: inline-block;
   margin-bottom: 0;
   padding-top: 3.052rem;
   padding-bottom: 2.441rem;
-  background: linear-gradient( var(--wht) 75%, hsla(0deg,0%,0%,0));
+  background: linear-gradient( var(--wht) 75%, hsla(0deg,0%,100%,0));
   z-index: 3;
 }
 
@@ -334,7 +334,7 @@ display: inline-block;
   padding-bottom: 2.441rem;
   z-index:2;
   color: var(--sq-blue);
-  background: linear-gradient( hsla(0deg,0%,0%,0) -0%,var(--wht) 20% 75%, hsla(0deg,0%,0%,0) );
+  background: linear-gradient( hsla(0deg,0%,100%,0) -0%,var(--wht) 20% 75%, hsla(0deg,0%,100%,0) );
   
 }
 
