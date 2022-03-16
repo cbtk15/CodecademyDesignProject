@@ -13,7 +13,8 @@
 
     --tl-1:1.25rem;
 
-    --nav-1: 1.25rem;
+    --nav-1: 1.563rem;
+    --nav-ch:1.25rem;
     
     --aside-hd:1.563rem;
     --aside-p:1rem;
@@ -212,22 +213,44 @@
 
 /* Back to the top Icon */
 
-.back2thetop{
+.back2thetop-span{
   position: sticky;
-  background-color: var(--wht);
-  color: var(--dark-clr);
-  border: var(--dark-clr) solid 2px;
-  padding: 5px;
-  border-radius: 50%;
   float: right;
   margin-right: 1.563rem;
   top:90%;
   margin-top: 4.768rem;
-
+  transition: all 0.15s ease-in-out;
+  transition-property: transform ;
 }
 
-.back2thetop a{
+.back2thetop-a:link{
+  background-color: var(--wht);
+  color: var(--dark-clr);
+  border: var(--dark-clr) solid 2px;
+  padding: 5px;
+  box-shadow: 0 14px 5px 1px hsla(195, 33%, 40%, 0.3);
+  border-radius: 50%;
   text-decoration: none;
+  transition: all 0.12s ease-in-out;
+  transition-property: background-color, box-shadow;
+}
+
+.back2thetop-a:visited{
+  color: var(--dark-clr);
+}
+
+.back2thetop-a:hover{
+  background-color: hsl(0, 0%, 95%);
+}
+
+.back2thetop-a:active{
+  background-color: var(--light-clr);
+  box-shadow: 0 9px 4px 0.50px hsla(195, 33%, 40%, 0.5);
+}
+
+
+.back2thetop-span:active{
+  transform: translateY(5px);
 }
 
 /* General section styling */
@@ -376,7 +399,7 @@ width: fit-content;
 }
     
 .ch-nav-a-6:link{
- font-size: var(--nav-1);
+ font-size: var(--nav-ch);
  color: hsl(195deg 53% 50%);
  text-decoration: none;
  padding: 0;
