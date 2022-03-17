@@ -278,11 +278,11 @@
 /* Section Colors */
 
 /* .sct2{
-  background: linear-gradient(hsla(0deg,0%,0%,0), var(--sq-prp));
+  background: linear-gradient(hsla(0deg,0%,100%,0), var(--sq-prp));
 }
 
 .sct3{
-  background: linear-gradient(hsla(0deg,0%,0%,0), var(--sq-prp));
+  background: linear-gradient(hsla(0deg,0%,100%,0), var(--sq-prp));
 } */
     
 
